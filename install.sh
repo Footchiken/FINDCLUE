@@ -81,7 +81,7 @@ fi
 
 echo "[✔] Instalando ...";
 echo "";
-git clone https://github.com/D4RK-4RMY/DARKARMY.git "$INSTALL_DIR";
+git clone https://github.com/Footchiken/FINDCLUE.git "$INSTALL_DIR "$INSTALL_DIR";
 echo "#!/bin/bash
 python3 $INSTALL_DIR/findclue.py" '${1+"$@"}' > FINDCLUE;
 chmod +x FINDCLUE;
