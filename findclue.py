@@ -91,7 +91,7 @@ findcluelogo = color_random[0] + '''
                 | |   | | | | \  | | |_/ / \ \___| |___\ \__/ /| |__   
                 |_|   \_/ \_|  \_/ |____/   \___/|____/ \____/ \____/  
                 
-                
+                						v1.1
                                 Testing Framework  
                                                                                                                                                                                                                    
 '''
@@ -144,17 +144,21 @@ def menu():
 def ddos():
     print('''\033[91m
                       
-    88""Yb 88""Yb  dP"Yb  88b 88 888888 dP"Yb
-    88__dP 88__dP dP   Yb 88Yb88   88  dP   Yb
-    88"""  88"Yb  Yb   dP 88 Y88   88  Yb   dP
-    88     88  Yb  YbodP  88  Y8   88   YbodP
+    88""Yb  88""Yb   dP"Yb .dP"Y8  
+    88   Yb 88   Yb dP   Yb `Ybo."  
+    88   dP 88   dP Yb   dP o.`Y8b  
+    8800dP  8800dP   YbodP  8bodP'  
  
-    [!] ESTAS HERRAMIENTAS ESTARÁN DISPONIBLES EN LA PRÓXIMA ACTUALIZACIÓN [!]
+    [!] HERRAMIENTAS DE DDOS[!]
          
  \033[0m''')
+    print("  {1}--Goldeneye ")
     print("  {99}-Volver al menú principal \n\n")
     choice2 = input("DDOS >> ")
 
+    if choice2 == "1":
+        clearScr()
+        goldeneye()
     if choice2 == "99":
         clearScr()
         menu()
@@ -163,7 +167,19 @@ def ddos():
         menu()
     else:
         clearScr()
-        
+
+def goldeneye():
+
+    choice2 = input("continuar ? Y / N : ")
+    if choice2 in yes:
+        os.system("git clone https://github.com/jseidl/GoldenEye.git")
+        os.system("cd GoldenEye && ./configure && make && make install")
+    elif choice2 in no:
+        info()
+    elif choice2 == "":
+        menu()
+    else:
+        menu()
         
 def rat():
     print('''\033[91m
