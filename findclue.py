@@ -106,8 +106,6 @@ def menu():
    {5}--Ingeniería social
    {6}--Web Hacking
    {7}--Ataques de DDOS
-   {8}--Herramientas de administrador remoto (RAT)
-   {9}--Bug Bounty Tools 
    {0}--Actualizar Software
    {99}-Salir
  """)
@@ -127,10 +125,10 @@ def menu():
         webhack()
     elif choice == "7":
         ddos()
-    elif choice == "8":
-        rat()
-    elif choice == "9":
-        bugbounty()
+    #elif choice == "8":
+    #    rat()
+    #elif choice == "9":
+    #    bugbounty()
     elif choice == "0":
         updateframework()
     elif choice == "99":
